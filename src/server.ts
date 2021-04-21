@@ -4,6 +4,8 @@ import { routes } from "./routes";
 
 const app = express();
 
+app.disable("x-powered-by"); // recomendação do sonar
+
 app.use(express.json());
 
 app.use(routes);
