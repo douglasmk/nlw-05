@@ -1,5 +1,5 @@
 import express from "express";
-import "./database"
+import "./database";
 import { routes } from "./routes";
 import { createServer } from "http";
 import { Server, Socket } from "socket.io";
@@ -14,16 +14,20 @@ app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 
 app.get("/pages/client", (request, response) => {
-    return response.render("html/client.html");
-})
+  return response.render("html/client.html");
+});
+
+app.get("/pages/admin", (request, response) => {
+  return response.render("html/admin.html");
+});
 
 const http = createServer(app); // criando protocolo http
 
 const io = new Server(http); // criando protocolo web socket
 
 io.on("connection", (socket: Socket) => {
-    // console.log("Se conectou", socket.id);
-})
+  // console.log("Se conectou", socket.id);
+});
 
 app.use(express.json());
 
