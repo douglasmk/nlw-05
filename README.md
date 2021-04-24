@@ -1,6 +1,6 @@
 # NLW-05-NodeJS
 
-Projeto desenvolvido durante a [NLW05](https://nextlevelweek.com/), evento realizado pela [Rocketseat](https://rocketseat.com.br/) ministrado pela @danileao
+Projeto desenvolvido durante a [NLW05](https://nextlevelweek.com/), evento realizado pela [Rocketseat](https://rocketseat.com.br/) ministrado pela [@danileao](https://github.com/danileao/)
 
 ## Tecnologias Utilizadas:
 * [NodeJS](https://nodejs.org/)
