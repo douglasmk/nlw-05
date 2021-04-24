@@ -7,5 +7,5 @@ services:
         ports:
         - 3000:3000
         working_dir: /usr/app
-        command: "yarn install"
-        command: "yarn dev"
+        command: sh -c "yarn install"
+        command: sh -c "yarn run dev"
